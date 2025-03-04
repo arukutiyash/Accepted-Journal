@@ -1,61 +1,50 @@
 # Accepted-Journal
-Drowsiness Detection System
-Overview
-The Drowsiness Detection System is a machine vision-based project designed to enhance driver safety by detecting signs of fatigue in real-time. This system uses facial landmark detection and eye-tracking algorithms to monitor the driver's eye aspect ratio (EAR) and alert them if drowsiness is detected. By addressing the critical issue of driver fatigue, this project aims to reduce road accidents caused by inattentiveness 4.
+# Drowsiness Detection System
 
-Key features of the system include:
+## Overview
+The **Drowsiness Detection System** is a machine vision-based project designed to enhance driver safety by detecting signs of fatigue in real-time. This system uses facial landmark detection and eye-tracking algorithms to monitor the driver's eye aspect ratio (EAR) and alert them if drowsiness is detected.
 
-Real-time detection of drowsiness using a webcam feed.
-Alerts via alarms when the driver shows signs of fatigue or yawning.
-Cross-platform compatibility with both Windows and Ubuntu operating systems.
-Scalable design with potential for future enhancements like heart rate monitoring and integration with vehicle systems 26.
-Table of Contents
-Installation
-Usage
-Technologies Used
-System Requirements
-Testing
-Future Scope
-Contributing
-License
-Installation
+Key Features:
+- Real-time detection of drowsiness using a webcam feed.
+- Alerts via alarms when the driver shows signs of fatigue or yawning.
+- Cross-platform compatibility with both Windows and Ubuntu operating systems.
+
+## Table of Contents
+1. [Installation](#installation)
+2. [Usage](#usage)
+3. [Technologies Used](#technologies-used)
+4. [System Requirements](#system-requirements)
+5. [Testing](#testing)
+6. [Future Scope](#future-scope)
+7. [Contributing](#contributing)
+8. [License](#license)
+
+## Installation
 To set up the Drowsiness Detection System on your local machine, follow these steps:
 
-Clone the Repository
-bash
-Copy
-1
-2
-git clone https://github.com/yourusername/drowsiness-detection-system.git
-cd drowsiness-detection-system
-Install Dependencies
-Ensure you have Python 3 installed. Then, install the required libraries using pip:
-bash
-Copy
-1
-pip install numpy scipy playsound dlib imutils opencv-python
-Download Pre-trained Models
-Download the pre-trained shape predictor model (shape_predictor_68_face_landmarks.dat) from dlib.net and place it in the project directory 7.
-Usage
-Run the system using the following command:
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/arukutiyash/Accepted-Journal.git
+   cd Accepted-Journal
+2.Install dependencies: pip install numpy scipy playsound dlib imutils opencv-python
+3. Usage:python drowsiness_yawn.py --webcam 0
 
-bash
-Copy
-1
-python drowsiness_yawn.py --webcam 0
-Replace 0 with the index of your webcam if you have multiple cameras connected.
-The system will display a live video feed, analyze the driver's face, and trigger alerts if drowsiness or yawning is detected.
-Example Output:
-
-A green contour will be drawn around the eyes and mouth.
-If drowsiness is detected, the system will display "DROWSINESS ALERT!" and sound an alarm.
-If yawning is detected, the system will display "Yawn Alert" and suggest taking fresh air.
 Technologies Used
-This project leverages the following technologies and libraries:
-
-Python : The core programming language used for implementation 11.
-OpenCV : For capturing and processing video streams from the webcam.
-Dlib : For facial landmark detection using 68 predefined points 13.
+Python : Core programming language.
+OpenCV : Captures and processes video streams.
+Dlib : Detects facial landmarks.
 Imutils : Provides convenient functions for OpenCV.
-Scipy : Used for calculating Euclidean distances between eyelids.
-Numpy : For numerical computations and array manipulations.
+Scipy : Calculates Euclidean distances between eyelids.
+System Requirements
+Python 3.x
+Libraries: Numpy, Scipy, Playsound, Dlib, Imutils, OpenCV
+A laptop or desktop computer with basic hardware.
+A webcam for capturing video input.
+Testing
+The system was tested under various conditions, including different lighting, face angles, and the presence of glasses. Test results demonstrate reliable performance.
+
+Future Scope
+Incorporate parameters like blink rate and heart rate monitoring.
+Integrate the system with vehicle control systems.
+Extend the application to other domains, such as streaming services.![Screenshot 2025-03-04 134437](https://github.com/user-attachments/assets/09946db8-5f48-4a41-b7dd-acf68ef43419)
+
